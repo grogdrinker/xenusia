@@ -48,7 +48,7 @@ First, install [PyTorch](https://pytorch.org/get-started/locally/) separately fo
 Then install the other required libraries:
 
 ```sh
-pip install "numpy scikit-learn requests
+pip install numpy scikit-learn requests
 ```
 
 Finally, you can clone the repository with the following command:
