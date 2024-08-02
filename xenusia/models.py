@@ -21,7 +21,8 @@
 
 import torch,os
 from torch import nn
-
+import warnings
+warnings.filterwarnings("ignore")
 class gru1(nn.Module):
 
 	def __init__(self, n_features=44, max_batch=5, hidden_dim=7, cuda=False, hidden_layers=2, reinitialize_hidden=True):

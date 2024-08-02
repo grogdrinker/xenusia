@@ -60,7 +60,7 @@ def leggifasta(database):  # legge un file fasta e lo converte in un dizionario
 				uniprotid = i.strip('>\n')
 			dizio[uniprotid] = ''
 		else:
-			dizio[uniprotid] = dizio[uniprotid] + i.strip('\n')
+			dizio[uniprotid] = dizio[uniprotid] + i.strip('\n').upper()
 	return dizio
 
 def parse_uniprot_annotations(fil="/".join(os.path.realpath(__file__).split("/")[:-1])+'/dataset/all_seqs_dnabinding_uniprot.annotations'):
